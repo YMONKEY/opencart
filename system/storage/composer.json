@@ -1,7 +1,0 @@
-{
-    "name": "root/storage",
-    "require": {
-        "paypal/paypal-checkout-sdk": "^1.0",
-        "phpunit/phpunit": "^8.5"
-    }
-}
