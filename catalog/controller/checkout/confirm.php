@@ -407,7 +407,7 @@ class ControllerCheckoutConfirm extends Controller {
 				);
 			}
 
-			$data['payment'] = $this->load->controller('extension/payment/' . $this->session->data['payment_method']['code']);
+			$data['payment'] = $this->load->controller('extension/payment/' . $this->session->data['payment_method']['code'],$order_data);
 		} else {
 			$data['redirect'] = $redirect;
 		}
