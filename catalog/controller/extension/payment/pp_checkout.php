@@ -121,11 +121,12 @@ class ControllerExtensionPaymentPPCheckout extends Controller {
         return $bulidData;
     }
     public function returnBack() {
+        print_r($_REQUEST);
         echo "return back";
     }
-    public static function client()
+    public function client()
     {
-        return new PayPalHttpClient(self::environment());
+        return new PayPalHttpClient($this->environment());
     }
     public  function environment()
     {
